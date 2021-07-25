@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import ReCAPTCHA from "react-google-recaptcha"
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+const RECAPTCHA_KEY = '6LcVor0bAAAAALRAYvfY4xhn6QXmilE74bINOr6b'
+const SECRET_KEY = '6LcVor0bAAAAAOwC6WwckPo9qenJp72_pY7IcaxE'
 
 class Main extends React.Component {
   render() {
@@ -77,8 +80,8 @@ class Main extends React.Component {
             <img src={pic03} alt="" />
           </span>
           <p>
-          We are a multidisciplinary team orientate to build digital projects with joy and firm steps. The members of Pichones have over 11 years of experience working in the tech and digital industries with success.<br/>
-          Our greatest distintive is our ability to adapt and explore new programming languages and  innovative software tools. As well as our high performance for a critical and functional requirements analysis.
+          We are a multidisciplinary team orientated to build digital projects with enthusiasm and firm steps. Our members of Pichones have over 11 years of experience working in the Tech and Digital industries successful experience.<br/>
+          Our greatest distiction is our ability to adapt and explore new programming languages and  innovative software tools. As well as our high performance for a critical and functional requirements analysis.
           </p>
           {close}
         </article>
@@ -92,9 +95,13 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
           <form
-              name="Contact Form"
+              name="ContactForm"
               method="POST"
+              id="contact-form"
+              class="contact-fm"
               data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true"
               action="/thank-you"
             >
             <div className="field half first">
@@ -103,15 +110,18 @@ class Main extends React.Component {
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="email" name="email" id="email" />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
+              <ReCAPTCHA sitekey={RECAPTCHA_KEY} />
             </div>
+            
             <ul className="actions">
               <li>
-                <input type="submit" value="Send Message" className="special" />
+              <button type="submit">Send</button>
+                {/* <button type="submit" value="Send Message" className="special" /> */}
               </li>
               <li>
                 <input type="reset" value="Reset" />
