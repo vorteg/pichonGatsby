@@ -2,8 +2,8 @@ import React from 'react'
 import { navigate } from 'gatsby'
 import Recaptcha from 'react-google-recaptcha'
 
-const RECAPTCHA_KEY = '6LcVor0bAAAAALRAYvfY4xhn6QXmilE74bINOr6b'
-const SECRET_KEY = '6LcVor0bAAAAAOwC6WwckPo9qenJp72_pY7IcaxE'
+const RECAPTCHA_KEY = '6Lf8vr0bAAAAAP8IttOzpEtLdv2tX8K-rkgqCIKa'
+const SECRET_KEY = '6Lf8vr0bAAAAALyxtUyVRbpHXL2mluHMdc3pZJOy'
 
 const ContactForm = () => {
   const [state, setState] = React.useState({})
