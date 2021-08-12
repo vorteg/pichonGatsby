@@ -79,8 +79,8 @@ class Main extends React.Component {
             <img src={pic03} alt="" />
           </span>
           <p>
-          We are a multidisciplinary team orientated to build digital projects with enthusiasm and firm steps. Our members of Pichones have over 11 years of experience working in the Tech and Digital industries successful experience.<br/>
-          Our greatest distiction is our ability to adapt and explore new programming languages and  innovative software tools. As well as our high performance for a critical and functional requirements analysis.
+          We are a multidisciplinary team orientated to build digital projects with enthusiasm and firm steps. Our members of Pichones have over 11 years of experience working in the Tech and Digital industries.<br/>
+          Our greatest distinction is our ability to adapt and explore new programming languages and  innovative software tools. As well as our high performance for a critical and functional requirements analysis.
           </p>
           {close}
         </article>
