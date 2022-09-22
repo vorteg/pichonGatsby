@@ -59,10 +59,10 @@ class Main extends React.Component {
           </span>
           <h3>expertise area</h3>
           <ul>
-            <li type="circle">Design.</li>
-            <li type="circle">Development.</li>
+            <li type="circle">Software Design.</li>
+            <li type="circle">Software Development.</li>
             <li type="circle">Cloud & DevOps.</li>
-            <li type="circle">Data & AI.</li>
+            <li type="circle">Computer Vision & AI.</li>
           </ul>     
           {close}
         </article>
